@@ -30,7 +30,7 @@ You can install the development version of zenstats from [GitHub](https://github
 remotes::install_github("rfsaldanha/zenstats")
 ```
 
-## Example
+## Example 
 
 ```{r example}
 library(zenstats)

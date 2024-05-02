@@ -27,16 +27,17 @@ scrap_stats <- function(deposit_id, all_versions_only = FALSE){
 
   # Prepare table
   res <- tibble::tibble(
+    date = Sys.time(),
     deposit = rep(deposit_id, 2),
     version = c("All versions", "This version"),
     views = as.numeric(c(zen_stats[[1,2]], zen_stats[[1,3]])),
     downloads = as.numeric(c(zen_stats[[2,2]], zen_stats[[2,3]])),
-    volume = rlang::parse_bytes(c(zen_stats[[3,2]], zen_stats[[3,3]])),
+    volume = rlang::parse_bytes(c(zen_stats[[3,2]], zen_stats[[3,3]]))
   )
 
   # Filter all versions only
   if(all_versions_only){
-    res <- res[1,c(1,3:5)]
+    res <- res[1,c(1,2,4:6)]
   }
 
   # Return

@@ -1,3 +1,3 @@
-# zenstats (development version)
+# zenstats 0.0.1
 
-* Initial CRAN submission.
+* Initial version with basic functions.

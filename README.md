@@ -10,8 +10,8 @@
 
 A Zenodo deposit contains some statistics of interest, like the number
 of views and downloads, that is not available to programmaticaly access
-through its API. The `zenstats` package scraps the one or multiple
-deposit webpages and return the deposits statistics as a tibble.
+through its API. The `zenstats` package scraps deposit webpages and
+return the deposits statistics as a tibble.
 
 ## Installation
 
@@ -33,11 +33,11 @@ deposit_stats(ids, all_versions_only = TRUE, progress = FALSE)
 #> # A tibble: 2 × 5
 #>   date                 deposit views downloads  volume
 #>   <dttm>                 <dbl> <dbl>     <dbl>   <byt>
-#> 1 2024-05-17 14:33:21 10036212   528       322 1.40 TB
-#> 2 2024-05-17 14:33:23 10947952    72        39 1.70 GB
+#> 1 2024-05-17 14:50:40 10036212   528       322 1.40 TB
+#> 2 2024-05-17 14:50:41 10947952    72        39 1.70 GB
 ```
 
-## Why does it take so long?
+## Polite webpage crawling
 
 This package respects the ‘robots.txt’ policies from Zenodo, including
 the crawl delay of 10 seconds.

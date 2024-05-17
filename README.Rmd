@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 [![R-CMD-check](https://github.com/rfsaldanha/zenstats/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/rfsaldanha/zenstats/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-A Zenodo deposit contains some statistics of interest, like the number of views and downloads, that is not available to programmaticaly access through its API. The `zenstats` package scraps the one or multiple deposit webpages and return the deposits statistics as a tibble.
+A Zenodo deposit contains some statistics of interest, like the number of views and downloads, that is not available to programmaticaly access through its API. The `zenstats` package scraps deposit webpages and return the deposits statistics as a tibble.
 
 ## Installation
 
@@ -40,7 +40,7 @@ ids <- c(10036212, 10947952)
 deposit_stats(ids, all_versions_only = TRUE, progress = FALSE)
 ```
 
-## Why does it take so long?
+## Polite webpage crawling
 
 This package respects the 'robots.txt' policies from Zenodo, including the crawl delay of 10 seconds.
 

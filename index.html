@@ -58,7 +58,7 @@
 </h1></div>
 <!-- badges: start -->
 
-<p>A Zenodo deposit contains some statistics of interest, like the number of views and downloads, that is not available to programmaticaly access through its API. The <code>zenstats</code> package scraps the one or multiple deposit webpages and return the deposits statistics as a tibble.</p>
+<p>A Zenodo deposit contains some statistics of interest, like the number of views and downloads, that is not available to programmaticaly access through its API. The <code>zenstats</code> package scraps deposit webpages and return the deposits statistics as a tibble.</p>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
@@ -79,11 +79,11 @@
 <span><span class="co">#&gt; # A tibble: 2 × 5</span></span>
 <span><span class="co">#&gt;   date                 deposit views downloads  volume</span></span>
 <span><span class="co">#&gt;   &lt;dttm&gt;                 &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;   &lt;byt&gt;</span></span>
-<span><span class="co">#&gt; 1 2024-05-17 14:33:21 10036212   528       322 1.40 TB</span></span>
-<span><span class="co">#&gt; 2 2024-05-17 14:33:23 10947952    72        39 1.70 GB</span></span></code></pre></div>
+<span><span class="co">#&gt; 1 2024-05-17 14:50:40 10036212   528       322 1.40 TB</span></span>
+<span><span class="co">#&gt; 2 2024-05-17 14:50:41 10947952    72        39 1.70 GB</span></span></code></pre></div>
 </div>
 <div class="section level2">
-<h2 id="why-does-it-take-so-long">Why does it take so long?<a class="anchor" aria-label="anchor" href="#why-does-it-take-so-long"></a>
+<h2 id="polite-webpage-crawling">Polite webpage crawling<a class="anchor" aria-label="anchor" href="#polite-webpage-crawling"></a>
 </h2>
 <p>This package respects the ‘robots.txt’ policies from Zenodo, including the crawl delay of 10 seconds.</p>
 </div>

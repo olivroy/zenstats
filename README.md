@@ -8,12 +8,14 @@
 [![R-CMD-check](https://github.com/rfsaldanha/zenstats/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/rfsaldanha/zenstats/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-Scrap Zenodo deposit statistics.
+A Zenodo deposit contains some statistics of interest, like the number
+of views and downloads, that is not available to programmaticaly access
+through its API. The `zenstats` package scraps the one or multiple
+deposit webpages and return the deposits statistics as a tibble.
 
 ## Installation
 
-You can install the development version of zenstats from
-[GitHub](https://github.com/) with:
+You can install the development version of zenstats from GitHub with:
 
 ``` r
 # install.packages("remotes")
@@ -31,6 +33,11 @@ deposit_stats(ids, all_versions_only = TRUE, progress = FALSE)
 #> # A tibble: 2 × 5
 #>   date                 deposit views downloads  volume
 #>   <dttm>                 <dbl> <dbl>     <dbl>   <byt>
-#> 1 2024-05-17 12:29:09 10036212   525       322 1.40 TB
-#> 2 2024-05-17 12:29:10 10947952    69        39 1.70 GB
+#> 1 2024-05-17 14:33:21 10036212   528       322 1.40 TB
+#> 2 2024-05-17 14:33:23 10947952    72        39 1.70 GB
 ```
+
+## Why does it take so long?
+
+This package respects the ‘robots.txt’ policies from Zenodo, including
+the crawl delay of 10 seconds.

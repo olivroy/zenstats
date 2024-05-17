@@ -31,7 +31,8 @@ scrap_stats <- function(deposit_id, all_versions_only = FALSE){
   }
 
   # Read html
-  zen_web <- rvest::read_html(url)
+  zen_web <- polite::bow(url) |>
+    polite::scrape()
 
   # Scrap statistics table
   zen_stats <- zen_web |>

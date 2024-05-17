@@ -13,6 +13,7 @@ Imports:
     checkmate,
     cli,
     curl,
+    polite,
     purrr,
     RCurl,
     rlang,

@@ -31,6 +31,6 @@ deposit_stats(ids, all_versions_only = TRUE, progress = FALSE)
 #> # A tibble: 2 × 5
 #>   date                 deposit views downloads  volume
 #>   <dttm>                 <dbl> <dbl>     <dbl>   <byt>
-#> 1 2024-05-02 16:42:17 10036212   493       306 1.40 TB
-#> 2 2024-05-02 16:42:17 10947952    54        35 1.50 GB
+#> 1 2024-05-17 12:29:09 10036212   525       322 1.40 TB
+#> 2 2024-05-17 12:29:10 10947952    69        39 1.70 GB
 ```

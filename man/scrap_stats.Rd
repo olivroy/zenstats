@@ -18,6 +18,7 @@ a tibble
 Scrap statistics from a Zenodo deposit
 }
 \examples{
+\dontshow{if (identical(tolower(Sys.getenv("NOT_CRAN")), "true")) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
 scrap_stats(10013255)
-
+\dontshow{\}) # examplesIf}
 }

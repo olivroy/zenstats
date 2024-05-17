@@ -7,7 +7,7 @@
 #' @return a tibble.
 #' @export
 #'
-#' @examples
+#' @examplesIf identical(tolower(Sys.getenv("NOT_CRAN")), "true")
 #' deposit_stats(c(10013255, 10889682), all_versions_only = TRUE)
 deposit_stats <- function(deposit_ids, all_versions_only = FALSE, progress = TRUE){
   # Assertions
@@ -15,12 +15,14 @@ deposit_stats <- function(deposit_ids, all_versions_only = FALSE, progress = TRU
   checkmate::assert_logical(x = all_versions_only)
   checkmate::assert_logical(x = progress)
 
-  # Map over ids
-  deposit_ids |>
+  # Map over ids, sequentially
+  res <- deposit_ids |>
     purrr::map(
       scrap_stats,
       all_versions_only = all_versions_only,
       .progress = progress
     ) |>
     purrr::list_rbind()
+
+  return(res)
 }

@@ -20,5 +20,7 @@ a tibble.
 Fetch stats from one or more Zenodo deposits
 }
 \examples{
+\dontshow{if (identical(tolower(Sys.getenv("NOT_CRAN")), "true")) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
 deposit_stats(c(10013255, 10889682), all_versions_only = TRUE)
+\dontshow{\}) # examplesIf}
 }

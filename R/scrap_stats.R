@@ -6,7 +6,7 @@
 #' @return a tibble
 #' @export
 #'
-#' @examples
+#' @examplesIf identical(tolower(Sys.getenv("NOT_CRAN")), "true")
 #' scrap_stats(10013255)
 #'
 scrap_stats <- function(deposit_id, all_versions_only = FALSE){
@@ -16,6 +16,19 @@ scrap_stats <- function(deposit_id, all_versions_only = FALSE){
 
   # Deposit URL
   url <- paste0("https://zenodo.org/records/", deposit_id)
+
+  # Check internet
+  if(!curl::has_internet()){
+    cli::cli_alert_warning("There is no Internet connectivity. Please check your connection.")
+    return(NULL)
+  }
+
+  # Check URL
+  if(!RCurl::url.exists(url, timeout.ms = 5000)){
+    cli::cli_alert_warning("The deposit is not available or the Zenodo website is down. Please manually check the following URL and try again.")
+    cli::cli_alert("{url}")
+    return(NULL)
+  }
 
   # Read html
   zen_web <- rvest::read_html(url)

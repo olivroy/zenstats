@@ -2,7 +2,7 @@
 % Please edit documentation in R/deposit_stats.R
 \name{deposit_stats}
 \alias{deposit_stats}
-\title{Fetch stats from one or more Zenodo deposits}
+\title{Fetch statistics from one or more Zenodo deposits}
 \usage{
 deposit_stats(deposit_ids, all_versions_only = FALSE, progress = TRUE)
 }
@@ -17,7 +17,7 @@ deposit_stats(deposit_ids, all_versions_only = FALSE, progress = TRUE)
 a tibble.
 }
 \description{
-Fetch stats from one or more Zenodo deposits
+Fetch statistics from one or more Zenodo deposits
 }
 \examples{
 \dontshow{if (identical(tolower(Sys.getenv("NOT_CRAN")), "true")) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}

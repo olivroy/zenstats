@@ -1,4 +1,4 @@
-#' Fetch stats from one or more Zenodo deposits
+#' Fetch statistics from one or more Zenodo deposits
 #'
 #' @param deposit_ids vector. A vector of Zenodo deposit ids.
 #' @param all_versions_only logical. If `TRUE`, return only the results for all versions.

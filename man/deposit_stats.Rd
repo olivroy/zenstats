@@ -17,7 +17,7 @@ deposit_stats(deposit_ids, all_versions_only = FALSE, progress = TRUE)
 a tibble.
 }
 \description{
-Fetch statistics from one or more Zenodo deposits
+This function will fetch statistics from multiple deposits, respecting web crawling policies from Zenodo's 'robots.txt' file.
 }
 \examples{
 \dontshow{if (identical(tolower(Sys.getenv("NOT_CRAN")), "true")) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}

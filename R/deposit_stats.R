@@ -1,5 +1,7 @@
 #' Fetch statistics from one or more Zenodo deposits
 #'
+#' This function will fetch statistics from multiple deposits, respecting web crawling policies from Zenodo's 'robots.txt' file.
+#'
 #' @param deposit_ids vector. A vector of Zenodo deposit ids.
 #' @param all_versions_only logical. If `TRUE`, return only the results for all versions.
 #' @param progress logical. Show a progress bar.

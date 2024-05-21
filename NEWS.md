@@ -1,3 +1,6 @@
+# zenstats 0.1.0
+* Documentation updates for CRAN submission.
+
 # zenstats 0.0.4
 * Adopt a polite strategy to scrape webpages in respect with the 'robots.txt' at Zenodo.
 

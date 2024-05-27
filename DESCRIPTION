@@ -16,6 +16,7 @@ Imports:
     polite,
     purrr,
     RCurl,
+    readr,
     rlang,
     rvest,
     tibble

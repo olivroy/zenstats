@@ -44,8 +44,8 @@ scrap_stats <- function(deposit_id, all_versions_only = FALSE){
     date = Sys.time(),
     deposit = rep(deposit_id, 2),
     version = c("All versions", "This version"),
-    views = as.numeric(c(zen_stats[[1,2]], zen_stats[[1,3]])),
-    downloads = as.numeric(c(zen_stats[[2,2]], zen_stats[[2,3]])),
+    views = readr::parse_number(c(zen_stats[[1,2]], zen_stats[[1,3]])),
+    downloads = readr::parse_number(c(zen_stats[[2,2]], zen_stats[[2,3]])),
     volume = rlang::parse_bytes(c(zen_stats[[3,2]], zen_stats[[3,3]]))
   )
 

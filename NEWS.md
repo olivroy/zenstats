@@ -1,3 +1,6 @@
+# zenstats 0.1.2
+* Update package description for CRAN submission.
+
 # zenstats 0.1.1
 * Parse formatted numbers with commas and decorations.
 

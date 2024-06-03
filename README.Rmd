@@ -17,6 +17,7 @@ knitr::opts_chunk$set(
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/rfsaldanha/zenstats/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/rfsaldanha/zenstats/actions/workflows/R-CMD-check.yaml)
+[![CRAN status](https://www.r-pkg.org/badges/version/zenstats)](https://CRAN.R-project.org/package=zenstats)
 <!-- badges: end -->
 
 A Zenodo deposit contains some statistics of interest, like the number of views and downloads, that is not available to programmaticaly access through its API. The `zenstats` package scraps deposit webpages and return the deposits statistics as a tibble.

@@ -6,6 +6,8 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/rfsaldanha/zenstats/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/rfsaldanha/zenstats/actions/workflows/R-CMD-check.yaml)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/zenstats)](https://CRAN.R-project.org/package=zenstats)
 <!-- badges: end -->
 
 A Zenodo deposit contains some statistics of interest, like the number
@@ -41,8 +43,8 @@ deposit_stats(ids, all_versions_only = TRUE, progress = FALSE)
 #> # A tibble: 2 × 5
 #>   date                 deposit views downloads  volume
 #>   <dttm>                 <dbl> <dbl>     <dbl>   <byt>
-#> 1 2024-06-03 09:51:25 10036212   564       344 1.50 TB
-#> 2 2024-06-03 09:51:36 10947952    94        44 1.90 GB
+#> 1 2024-06-03 09:53:43 10036212   564       344 1.50 TB
+#> 2 2024-06-03 09:53:53 10947952    94        44 1.90 GB
 ```
 
 ## Polite webpage crawling

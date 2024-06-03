@@ -23,11 +23,18 @@ A Zenodo deposit contains some statistics of interest, like the number of views 
 
 ## Installation
 
-You can install the development version of zenstats from GitHub with:
+You can install the stable release from CRAN.
+
+``` r
+install.packages("zenstats")
+library(zenstats)
+```
+Or install the development version of from GitHub:
 
 ``` r
 # install.packages("remotes")
 remotes::install_github("rfsaldanha/zenstats")
+library(zenstats)
 ```
 
 ## Example 

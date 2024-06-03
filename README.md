@@ -15,11 +15,19 @@ return the deposits statistics as a tibble.
 
 ## Installation
 
-You can install the development version of zenstats from GitHub with:
+You can install the stable release from CRAN.
+
+``` r
+install.packages("zenstats")
+library(zenstats)
+```
+
+Or install the development version of from GitHub:
 
 ``` r
 # install.packages("remotes")
 remotes::install_github("rfsaldanha/zenstats")
+library(zenstats)
 ```
 
 ## Example
@@ -33,8 +41,8 @@ deposit_stats(ids, all_versions_only = TRUE, progress = FALSE)
 #> # A tibble: 2 × 5
 #>   date                 deposit views downloads  volume
 #>   <dttm>                 <dbl> <dbl>     <dbl>   <byt>
-#> 1 2024-05-17 14:50:40 10036212   528       322 1.40 TB
-#> 2 2024-05-17 14:50:41 10947952    72        39 1.70 GB
+#> 1 2024-06-03 09:51:25 10036212   564       344 1.50 TB
+#> 2 2024-06-03 09:51:36 10947952    94        44 1.90 GB
 ```
 
 ## Polite webpage crawling

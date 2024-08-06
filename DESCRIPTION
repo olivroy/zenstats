@@ -20,7 +20,8 @@ Imports:
     rlang,
     rvest,
     tibble
-URL: https://rfsaldanha.github.io/zenstats/
+URL: https://rfsaldanha.github.io/zenstats/, https://github.com/rfsaldanha/zenstats
+BugReports: https://github.com/rfsaldanha/zenstats/issues
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
